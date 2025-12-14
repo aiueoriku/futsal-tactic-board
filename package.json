@@ -6,5 +6,8 @@
     "build": "npm run build --prefix react-prototype",
     "lint": "npm run lint --prefix react-prototype",
     "preview": "npm run preview --prefix react-prototype"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }

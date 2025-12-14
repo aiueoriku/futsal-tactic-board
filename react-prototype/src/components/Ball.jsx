@@ -2,9 +2,11 @@ import React from 'react';
 import { Image } from 'react-konva';
 import useImage from 'use-image';
 
+import ballImg from '../assets/ball.svg';
+
 const Ball = ({ x, y, onDragEnd }) => {
   const [isDragging, setIsDragging] = React.useState(false);
-  const [image] = useImage('/ball.svg');
+  const [image] = useImage(ballImg);
   const size = 24;
 
   return (
