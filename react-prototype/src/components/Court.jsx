@@ -45,6 +45,7 @@ const Court = React.forwardRef(({ mode, players, ball, onPlayerDrag, onBallDrag,
   // Deselection logic
   const handleStageClick = (e) => {
     // Do nothing if Transformer is clicked
+    const clickedOnTransformer = e.target.findAncestor('Transformer');
     if (clickedOnTransformer) {
       return;
     }

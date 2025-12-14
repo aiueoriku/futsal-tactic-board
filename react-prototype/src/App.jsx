@@ -355,7 +355,8 @@ function App() {
         console.log('Starting FFmpeg load...');
 
         // Use local path (change to CDN URL if errors occur)
-        const baseURL = window.location.origin + '/ffmpeg';
+        // Fix: Use import.meta.env.BASE_URL to handle subdirectory deployment
+        const baseURL = window.location.origin + import.meta.env.BASE_URL + 'ffmpeg';
         const coreURL = `${baseURL}/ffmpeg-core.js`;
         const wasmURL = `${baseURL}/ffmpeg-core.wasm`;
 
